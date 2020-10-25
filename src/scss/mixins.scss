@@ -1,0 +1,26 @@
+%container {
+    max-width: $max-width;
+    padding: 0 15px;
+    margin: 0 auto;
+    margin-top: ;
+}
+%h1 {
+    font-size: ;
+}
+%h2 {
+    font-size: ;
+}
+%h3 {
+    font-size: ;
+}
+%h1, %h2, %h3 {
+    font-family: serif;
+    font-weight: bold;
+}
+%cta-btn {
+    font-size: 24px;
+    text-align: center;
+    background-color: $accent;
+    color: $text;
+    cursor: pointer;
+}
