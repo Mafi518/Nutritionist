@@ -112,17 +112,9 @@ header {
 
 // forWhat
 
-.need {
-
-}
-
-.need__title {
-
-}
-
 .need__list {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
     margin-bottom: 100px;
 }
@@ -132,6 +124,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 20px;
 }
 
 .need__description {
@@ -150,6 +143,9 @@ header {
     background-color: $blocks;
     padding: 40px 0;
     position: relative;
+    .container {
+        margin-top: 0;
+    }
 }
 
 .about {
@@ -170,6 +166,7 @@ header {
     z-index: 2;
     background: rgba($blocks, $alpha: 0.8);
     padding: 20px;
+    padding-bottom: 40px;
     border-radius: 30px;
 }
 
@@ -208,14 +205,6 @@ header {
 
 // consultation
 
-.consultation {
-
-}
-
-.consultation__title {
-
-}
-
 .consultation__list {
     display: flex;
     flex-wrap: wrap;
@@ -235,19 +224,7 @@ header {
     margin-bottom: 30px;
 }
 
-.consultation__subtitle {
-
-}
-
 // feedback
-
-.feedback {
-
-}
-
-.feedback__list {
-
-}
 
 .feedback__item {
     display: flex;
@@ -262,7 +239,13 @@ header {
 }
 
 .feedback__image {
-
+    max-width: 530px;
+    max-height: 654px;
+    overflow: hidden;
+    border-radius: 20px;
+    img {
+        max-height: 100%;
+    }
 }
 
 .feedback__name {
