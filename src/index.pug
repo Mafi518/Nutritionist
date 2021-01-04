@@ -236,7 +236,9 @@ html(lang="en")
                         textarea.contacts__area#comment(name="", cols="30", rows="10" placeholder="Напишите мне")
                         button(type="submit").contacts__button.cta Отправить сообщение
                     .contacts__image
-                        img(src="img/contacts-image.png", alt="")
+                        picture
+                            source(srcset="img/contacts-image.webp", type="image/webp")
+                            img(src="img/contacts-image.png", alt="")
         .success
             h2.success__title.h2 Сообщение успешно отправлено!
             p.success__subtitle В ближайшее время вам поступит звонок
